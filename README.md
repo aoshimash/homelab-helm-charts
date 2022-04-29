@@ -1,2 +1,3 @@
-# homelab-charts
-Charts for my homelab
+# homelab-helm-charts
+
+Helm Charts for my homelab
