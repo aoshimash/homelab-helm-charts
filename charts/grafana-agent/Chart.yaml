@@ -1,0 +1,13 @@
+---
+apiVersion: v2
+name: grafana-agent
+version: v0.0.1
+description: grafana-agent Chart for Grafana Labs Kubernetes integration. https://grafana.com/docs/grafana-cloud/kubernetes/integration-kubernetes/
+type: application
+home: https://github.com/aoshimash/homelab-helm-charts
+sources:
+  - https://grafana.com/docs/grafana-cloud/kubernetes/integration-kubernetes/
+dependencies:
+  - name: kube-state-metrics
+    version: 4.7.0
+    repository: https://prometheus-community.github.io/helm-charts

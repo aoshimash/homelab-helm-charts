@@ -1,0 +1,40 @@
+---
+# Cluster name
+cluster_name: mycluster
+
+# Cluster container runtime (which "cri" or "docker")
+container_runtime: cri
+
+image:
+  # `grafana/agent` image tag
+  tag: v0.24.0
+
+####################################
+# Grafana Cloud Prometheus
+####################################
+prometheus:
+  # How often should the metrics be collected
+  scrape_interval: 60s
+  remote_write:
+    # URL to send Prometheus metrics to Grafana Cloud
+    url:
+      basic_auth:
+        # Grafana Cloud Prometheus username
+        username:
+        # Grafana Cloud Prometheus password
+        password:
+
+####################################
+# Grafana Cloud Loki
+####################################
+logs:
+  # Period to resync directories being watched and files being tailed to discover
+  sync_period: 10s
+  client:
+    # URL to send Loki to Grafana Cloud
+    url: https://logs-********.grafana.net/api/prom/push
+    basic_auth:
+      # Grafana Cloud Loki username
+      username:
+      # Grafana Cloud Loki password
+      password:
