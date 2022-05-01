@@ -15,7 +15,7 @@ grafana-agent Chart for Grafana Labs Kubernetes integration.
 | prometheus.remote_write.basic_auth.username | string | nil | Grafana Cloud Prometheus username |
 | prometheus.remote_write.basic_auth.password | string | nil | Grafana Cloud Prometheus password |
 | logs.sync_period | string | 10s | Period to resync directories being watched and files being tailed to discover |
-| logs.client.url | string | nil | URL to send Loki to Grafana Cloud |
+| logs.client.url | string | nil | URL to send logs to Grafana Cloud |
 | logs.client.basic_auth.username | string | nil | Grafana Cloud Loki username |
 | logs.client.basic_auth.password | string | nil | Grafana Cloud Loki password |
 
