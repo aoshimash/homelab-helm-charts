@@ -118,10 +118,10 @@ data:
 
     integrations:
       prometheus_remote_write:
-      - url: {{ .Values.prometheus.prometheus_remote_write.url }}
+      - url: {{ .Values.prometheus.remote_write.url }}
         basic_auth:
-          username: {{ .Values.prometheus.prometheus_remote_write.basic_auth.username }}
-          password: {{ .Values.prometheus.prometheus_remote_write.basic_auth.password }}
+          username: {{ .Values.prometheus.remote_write.basic_auth.username }}
+          password: {{ .Values.prometheus.remote_write.basic_auth.password }}
 
     logs:
       configs:
